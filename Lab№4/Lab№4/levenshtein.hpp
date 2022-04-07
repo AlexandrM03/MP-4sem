@@ -1,7 +1,7 @@
 #include "libs.hpp"
 
 int levenshtein(const std::string& s1, const int len1, const std::string& s2, const int len2) {
-	std::vector<std::vector<int> > d(len1 + 1, std::vector<int>(len2 + 1));
+	std::vector<std::vector<int>> d(len1 + 1, std::vector<int>(len2 + 1));
 
 	d[0][0] = 0;
 	for (size_t i = 1; i <= len1; ++i) d[i][0] = i;
